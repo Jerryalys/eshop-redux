@@ -1,21 +1,4 @@
-/*!
 
-=========================================================
-* Now UI Dashboard React - v1.5.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/now-ui-dashboard-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/*eslint-disable*/
 import React, { Component } from "react";
 
 function FixedPlugin(props) {
@@ -34,10 +17,10 @@ function FixedPlugin(props) {
           <i className="fa fa-cog fa-2x" />
         </div>
         <ul className="dropdown-menu show">
-          <li className="header-title">SIDEBAR BACKGROUND</li>
+          {/* <li className="header-title">SIDEBAR BACKGROUND</li> */}
           <li className="adjustments-line">
             <div className="badge-colors text-center">
-              <span
+              {/* <span
                 className={
                   props.bgColor === "yellow"
                     ? "badge filter badge-yellow active"
@@ -47,8 +30,8 @@ function FixedPlugin(props) {
                 onClick={() => {
                   props.handleColorClick("yellow");
                 }}
-              />
-              <span
+              /> */}
+              {/* <span
                 className={
                   props.bgColor === "blue"
                     ? "badge filter badge-blue active"
@@ -58,8 +41,8 @@ function FixedPlugin(props) {
                 onClick={() => {
                   props.handleColorClick("blue");
                 }}
-              />
-              <span
+              /> */}
+              {/* <span
                 className={
                   props.bgColor === "green"
                     ? "badge filter badge-green active"
@@ -69,8 +52,8 @@ function FixedPlugin(props) {
                 onClick={() => {
                   props.handleColorClick("green");
                 }}
-              />
-              <span
+              /> */}
+              {/* <span
                 className={
                   props.bgColor === "orange"
                     ? "badge filter badge-orange active"
@@ -80,8 +63,8 @@ function FixedPlugin(props) {
                 onClick={() => {
                   props.handleColorClick("orange");
                 }}
-              />
-              <span
+              /> */}
+              {/* <span
                 className={
                   props.bgColor === "red"
                     ? "badge filter badge-red active"
@@ -91,31 +74,31 @@ function FixedPlugin(props) {
                 onClick={() => {
                   props.handleColorClick("red");
                 }}
-              />
+              /> */}
             </div>
           </li>
 
           <li className="button-container">
-            <a
+            {/* <a
               href="https://www.creative-tim.com/product/now-ui-dashboard-pro-react?ref=nudr-fixed-plugin"
               target="_blank"
               className="btn btn-primary btn-block btn-round"
             >
               Buy pro
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="https://www.creative-tim.com/product/now-ui-dashboard-react?ref=nudr-fixed-plugin"
               target="_blank"
               className="btn btn-warning btn-block btn-round"
             >
               Download free
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="https://demos.creative-tim.com/now-ui-dashboard-react/#/documentation/tutorial?ref=nudr-fixed-plugin"
               className="btn btn-block btn-round btn-info"
             >
               Documentation
-            </a>
+            </a> */}
           </li>
         </ul>
       </div>

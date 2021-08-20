@@ -19,8 +19,8 @@ const shirts = [
     },
     {
       id: 4,
-      title: 'Relaxed Set Jeans',
-      description: 'Easy Wearable Pants',
+      title: 'Topstitched Denim Shirt',
+      description: 'Regular Fit Shirt with Long Sleeves and Buttoned Cuffs',
       price: '40$'
     },
     {
@@ -31,9 +31,9 @@ const shirts = [
     },
     {
       id: 6,
-      title: 'Diagonal Textured Weave Shirt',
+      title: 'Cotton Denim Shirt',
       description: 'Relaxed Fit Shirt With a Stand-Up Collar',
-      price: '20$'
+      price: '30$'
     },
   ];
 

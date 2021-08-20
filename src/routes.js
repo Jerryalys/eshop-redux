@@ -24,7 +24,8 @@ import Maps from "views/Maps.js";
 import Upgrade from "views/Upgrade.js";
 import UserPage from "views/UserPage.js";
 import Jeans from "views/Jeans.js";
-import Shirts from "views/Shirts.js"
+import Shirts from "views/Shirts.js";
+import Sweatshirts from "views/Sweatshirts.js";
 
 var dashRoutes = [
   {
@@ -72,15 +73,22 @@ var dashRoutes = [
    {
     path: "/jeans",
     name: "Jeans",
-    icon: "files_paper",
+    icon: "shopping_bag-16",
     component: Jeans,
     layout: "/admin",
   },
   {
     path: "/shirts",
     name: "Shirts",
-    icon: "files_paper",
+    icon: "shopping_basket",
     component: Shirts,
+    layout: "/admin",
+  },
+  {
+    path: "/sweatshirts",
+    name: "Sweatshirts",
+    icon: "shopping_box",
+    component: Sweatshirts,
     layout: "/admin",
   },
   {
@@ -90,13 +98,13 @@ var dashRoutes = [
     component: Typography,
     layout: "/admin",
   },
-  {
-    pro: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "objects_spaceship",
-    component: Upgrade,
-    layout: "/admin",
-  },
+  // {
+  //   pro: true,
+  //   path: "/upgrade",
+  //   name: "Upgrade to PRO",
+  //   icon: "objects_spaceship",
+  //   component: Upgrade,
+  //   layout: "/admin",
+  // },
 ];
 export default dashRoutes;
