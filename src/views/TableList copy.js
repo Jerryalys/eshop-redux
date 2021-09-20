@@ -45,7 +45,7 @@ function RegularTables() {
                 <CardTitle tag="h4">Simple Table</CardTitle>
               </CardHeader>
               <CardBody>
-                <Table responsive>
+                {/* <Table responsive>
                   <thead className="text-primary">
                     <tr>
                       {thead.map((prop, key) => {
@@ -58,8 +58,8 @@ function RegularTables() {
                         return <th key={key}>{prop}</th>;
                       })}
                     </tr>
-                  </thead>
-                  <tbody>
+                  </thead> */}
+                  {/* <tbody>
                     {tbody.map((prop, key) => {
                       return (
                         <tr key={key}>
@@ -75,8 +75,8 @@ function RegularTables() {
                         </tr>
                       );
                     })}
-                  </tbody>
-                </Table>
+                  </tbody> */}
+                {/* </Table>
               </CardBody>
             </Card>
           </Col>
@@ -114,11 +114,11 @@ function RegularTables() {
                               );
                             return <td key={key}>{prop}</td>;
                           })}
-                        </tr>
-                      );
+                        </tr> */}
+                      {/* );
                     })}
                   </tbody>
-                </Table>
+                </Table> */}
               </CardBody>
             </Card>
           </Col>

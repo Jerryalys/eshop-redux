@@ -16,13 +16,18 @@
 
 */
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
+  Nav,
   NavItem,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
   Container,
   InputGroup,
   InputGroupText,
@@ -117,6 +122,16 @@ function DemoNavbar(props) {
       <Container fluid>
         <div className="navbar-wrapper">
           <div className="navbar-toggle">
+            <button
+              type="button"
+              ref={sidebarToggle}
+              className="navbar-toggler"
+              onClick={() => openSidebar()}
+            >
+              <span className="navbar-toggler-bar bar1" />
+              <span className="navbar-toggler-bar bar2" />
+              <span className="navbar-toggler-bar bar3" />
+            </button>
           </div>
           <NavbarBrand href="/">{getBrand()}</NavbarBrand>
         </div>
@@ -136,13 +151,46 @@ function DemoNavbar(props) {
               </InputGroupAddon>
             </InputGroup>
           </form>
+          <Nav navbar>
+            <NavItem>
+              {/* <Link to="#pablo" className="nav-link">
+                <i className="now-ui-icons media-2_sound-wave" />
+                <p>
+                  <span className="d-lg-none d-md-block">Stats</span>
+                </p>
+              </Link> */}
+            </NavItem>
+            <Dropdown
+              nav
+              isOpen={dropdownOpen}
+              toggle={(e) => dropdownToggle(e)}
+            >
+              <DropdownToggle caret nav>
+                <i className="now-ui-icons location_world" />
+                <p>
+                  <span className="d-lg-none d-md-block">Some Actions</span>
+                </p>
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem tag="a">Action</DropdownItem>
+                <DropdownItem tag="a">Another Action</DropdownItem>
+                <DropdownItem tag="a">Something else here</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
             <NavItem>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                 </svg>
               </p>
+              {/* <Link to="#pablo" className="nav-link">
+                <i className="now-ui-icons users_single-02" />
+                <p>
+                  <span className="d-lg-none d-md-block">Account</span>
+                </p>
+              </Link> */}
             </NavItem>
+          </Nav>
         </Collapse>
       </Container>
     </Navbar>

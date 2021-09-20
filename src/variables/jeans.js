@@ -1,39 +1,45 @@
 const jeans = [
     {
       id: 1,
-      title: 'Basic Relaxed',
-      description: 'Faded Slim Fit With A Five Pocket',
-      price: '55$'
+      title: 'Worker Jeans',
+      description: 'Straight-Fit Faded Jeans With Patch Pockets on the Front and Back',
+      price: '55$',
+      image: '../assets/img/jeans/jeans1.jpg'
     },
     {
       id: 2,
       title: 'Topstiched Jeans',
-      description: 'Front Slip Fly and Top Button',
-      price: '60$'
+      description: 'Relaxed Fit Trousers Featuring Front Pockets and Rear Patch Pocket',
+      price: '60$',
+      image: '../assets/img/jeans/jeans2.jpg',
     },
     {
       id: 3,
-      title: 'Relaxed Fit Jeans',
-      description: 'Basic Cut Slim Five Pocket',
-      price: '50$'
+      title: 'Cropped Slim Fit Jeans',
+      description: 'Faded Slim Fit Cropped with Five Pockets and Front Button Fastening',
+      price: '50$',
+      image: '../assets/img/jeans/jeans3.jpg',
     },
     {
       id: 4,
-      title: 'Relaxed Set Jeans',
-      description: 'Easy Wearable Pants',
-      price: '45$'
+      title: 'Relaxed Fit Jeans',
+      description: 'Five-Pocket Design, Contrast Topstiching and a Button-Up Front',
+      price: '45$',
+      image: '../assets/img/jeans/jeans4.jpg',
     },
     {
       id: 5,
-      title: 'New Relaxed Fit Jeans',
-      description: 'Cutting Slim Edge Fit Pockets',
-      price: '40$'
+      title: 'Relaxed Set Jeans',
+      description: 'Side Pockets and Rear Patch Pocket. Front Zip and Button Fastening',
+      price: '40$',
+      image: '../assets/img/jeans/jeans5.jpg',
     },
     {
       id: 6,
-      title: 'Cropped Slim Fit Jeans',
-      description: 'Cropped Jeans With Five Pockets and Front Button',
-      price: '35$'
+      title: 'Skinny Fit Jeans',
+      description: 'Five-Pocket Jeans. Front Pockets, Rear Patch Pocket. Front Button',
+      price: '35$',
+      image: '../assets/img/jeans/jeans6.jpg',
     },
   ];
 

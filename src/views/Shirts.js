@@ -3,16 +3,14 @@ import React from "react";
 import ProductList from "components/ProductList/ProductList.js";
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
 import shirts from "variables/shirts.js";
-import shirts1 from "../assets/img/shirts/shirts1.jpg"
-
-
-
+import shirts1 from "../assets/img/shirts/shirts1.jpg";
 
 function Shirts () {
+  console.log("shirts: ",shirts);
   return (
     <>
-    <PanelHeader size="sm" />
-    <ProductList 
+      <PanelHeader size="sm" />
+      <ProductList 
         products={shirts}
         image={shirts1}
         header='Shirts for Men'

@@ -49,5 +49,6 @@
   },
   "devDependencies": {
     "css-loader": "^6.2.0"
-  }
+  },
+  "packageManager": "yarn@3.0.2"
 }
