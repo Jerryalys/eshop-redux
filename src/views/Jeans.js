@@ -50,25 +50,22 @@ class Jeans extends Component {
   };
 }
 
-
-
-
 render () {
   return (
-  <>
-    <PanelHeader size="sm" />
-    <ProductList 
-      products={jeans}
-      image={jeans1}
-      header='Jeans For Men'
-      description='Foundation Of Contemporary Wardrobes, 
-      Whether Tailored Or Super Skinny, Straight or Slim, 
-      Biker or Destroyed, Our Denim Collection Caters To 
-      Every Style And Silhouette.'
-    />
-  </>
-);
-}
+    <>
+      <PanelHeader size="sm" />
+      <ProductList 
+        products={jeans}
+        image={jeans1}
+        header='Jeans For Men'
+        description='Foundation Of Contemporary Wardrobes, 
+        Whether Tailored Or Super Skinny, Straight or Slim, 
+        Biker or Destroyed, Our Denim Collection Caters To 
+        Every Style And Silhouette.'
+      />
+    </>
+    );
+  }
 }
 
 export default Jeans;

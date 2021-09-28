@@ -5,7 +5,7 @@ import Typography from "views/Typography.js";
 import Products from "views/Products.js";
 import Maps from "views/Maps.js";
 // import Upgrade from "views/Upgrade.js";
-import UserPage from "views/UserPage.js";
+import CustomerProfile from "views/CustomerProfile.js";
 import Jeans from "views/Jeans.js";
 import Shirts from "views/Shirts.js";
 import Sweatshirts from "views/Sweatshirts.js";
@@ -41,9 +41,9 @@ var dashRoutes = [
   },
   {
     path: "/user-page",
-    name: "User Profile",
+    name: "Customer Profile",
     icon: "users_single-02",
-    component: UserPage,
+    component: CustomerProfile,
     layout: "/admin",
   },
   {

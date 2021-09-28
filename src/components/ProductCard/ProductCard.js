@@ -1,8 +1,10 @@
 import React from "react";
 import { Card, CardBody, CardTitle, CardImg, Col, CardText, Button } from 'reactstrap';
 
-
 const ProductCard = ({ key, product, image }) => {
+  function clickHandler() {
+    console.log("Button Clicked")
+  }
   return (
     <Col
       lg={4}
@@ -22,7 +24,7 @@ const ProductCard = ({ key, product, image }) => {
               <div class="buttons d-flex flex-row">
                 <div class="cart"><i class="fa fa-shopping-cart"></i>
                   </div> 
-                <button class="btn btn-success cart-button px-5">Add to cart</button>
+                <button onClick={clickHandler} class="btn btn-success cart-button px-5">Add to Cart</button>
               </div>
             </div>
           </Button>

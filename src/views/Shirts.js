@@ -6,7 +6,6 @@ import shirts from "variables/shirts.js";
 import shirts1 from "../assets/img/shirts/shirts1.jpg";
 
 function Shirts () {
-  console.log("shirts: ",shirts);
   return (
     <>
       <PanelHeader size="sm" />
