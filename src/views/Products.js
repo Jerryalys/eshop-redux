@@ -1,7 +1,7 @@
-import React from "react";
-import { Card, CardBody, CardHeader, CardTitle, Row, Col } from "reactstrap";
+import React from "react"
+import { Card, CardBody, CardHeader, CardTitle, Row, Col } from "reactstrap"
 
-import PanelHeader from "components/PanelHeader/PanelHeader.js";
+import PanelHeader from "components/PanelHeader/PanelHeader.js"
 
 function RegularTables() {
   return (
@@ -104,7 +104,7 @@ function RegularTables() {
         </Row>
       </div>
     </>
-  );
+  )
 }
 
-export default RegularTables;
+export default RegularTables

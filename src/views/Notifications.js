@@ -3,7 +3,7 @@ import NotificationAlert from "react-notification-alert";
 import { Row, Col } from "reactstrap";
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
 import NotificationsCard from "components/NotificationsCard/NotificationsCard";
-import buttons from "variables/buttons";
+// import buttons from "variables/buttons";
 
 
 function Notifications() {

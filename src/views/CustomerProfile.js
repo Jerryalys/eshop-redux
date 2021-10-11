@@ -164,9 +164,11 @@ class User extends Component {
                       <Col md="12">
                         <FormGroup>
                           <label>
-                            <button type="submit" 
-                                    className="btn btn-light btn-rounded"
-                                    >Submit
+                              <button 
+                              type="submit" 
+                              className="btn btn-light btn-rounded"
+                              >
+                              Submit
                             </button>
                           </label>
                         </FormGroup>
