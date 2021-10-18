@@ -4,7 +4,6 @@ import Icons from "views/Icons.js";
 import Typography from "views/Typography.js";
 import Cart from "views/Cart.js";
 import Maps from "views/Maps.js";
-// import Upgrade from "views/Upgrade.js";
 import CustomerProfile from "views/CustomerProfile.js";
 import Jeans from "views/Jeans.js";
 import Shirts from "views/Shirts.js";
