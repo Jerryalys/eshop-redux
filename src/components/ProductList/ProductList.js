@@ -2,7 +2,9 @@ import React from "react";
 import { Card, CardHeader, CardBody, Row, Col } from 'reactstrap';
 import ProductCard from "components/ProductCard/ProductCard.js";
 
-const ProductList = ({ products, header, description, image, addtoCart}) => {
+
+const ProductList = ({products, header, description, image, addToCart}) => {
+  // console.log('in list, addToCart: ', addToCart);
   return (
     <div className="content">
         <Row>
@@ -16,8 +18,8 @@ const ProductList = ({ products, header, description, image, addtoCart}) => {
                 <Row>
                   {products.map((product, key) => {
                     return (
-                      <ProductCard
-                        addtoCart={addtoCart} 
+                      <ProductCard 
+                        addToCart={addToCart}
                         key={key} 
                         product={product} 
                         image={image}

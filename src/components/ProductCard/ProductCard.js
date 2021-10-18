@@ -2,14 +2,10 @@ import React, { Component } from "react"
 import { Card, CardBody, CardTitle, CardImg, Col, CardText, Button } from 'reactstrap'
 
 class ProductCard extends Component {
-  constructor() {
-    super()
-    this.state = {
-    }
-  }
-
   render() {
-    const {image, product, key, addtoCart} = this.props
+    const {image, product, key, addToCart} = this.props
+    // console.log(' addToCart: ',  addToCart);
+    
     return (
       <Col
         lg={4}
@@ -29,7 +25,7 @@ class ProductCard extends Component {
                 <div className="buttons d-flex flex-row">
                   <div className="cart"><i className="fa fa-shopping-cart"></i>
                     </div> 
-                  <button onClick={() => addtoCart(product)} className="btn btn-success cart-button px-5">Add to Cart</button>
+                  <button onClick={() => addToCart(product)} className="btn btn-success cart-button px-5">Add to Cart</button>
                 </div>
               </div>
             </Button>
