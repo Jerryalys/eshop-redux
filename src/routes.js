@@ -2,7 +2,7 @@ import Dashboard from "views/Dashboard.js";
 import Notifications from "views/Notifications.js";
 import Icons from "views/Icons.js";
 import Typography from "views/Typography.js";
-import Products from "views/Products.js";
+import Cart from "views/Cart.js";
 import Maps from "views/Maps.js";
 // import Upgrade from "views/Upgrade.js";
 import CustomerProfile from "views/CustomerProfile.js";
@@ -48,9 +48,9 @@ var dashRoutes = [
   },
   {
     path: "/extended-tables",
-    name: "Products",
+    name: "Cart",
     icon: "shopping_shop",
-    component: Products,
+    component: Cart,
     layout: "/admin",
   },
    {
