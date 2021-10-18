@@ -73,27 +73,5 @@ var dashRoutes = [
     component: Sweatshirts,
     layout: "/admin",
   },
-  // {
-  //   path: "/sweatshirts",
-  //   name: "Sweatshirts",
-  //   icon: "shopping_box",
-  //   component: Sweatshirts,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/typography",
-  //   name: "Typography",
-  //   icon: "design-2_ruler-pencil",
-  //   component: Typography,
-  //   layout: "/admin",
-  // },
-  // {
-  //   pro: true,
-  //   path: "/upgrade",
-  //   name: "Upgrade to PRO",
-  //   icon: "objects_spaceship",
-  //   component: Upgrade,
-  //   layout: "/admin",
-  // },
 ];
 export default dashRoutes;
