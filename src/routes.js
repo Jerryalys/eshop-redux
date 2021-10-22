@@ -1,10 +1,10 @@
 import Dashboard from "views/Dashboard.js";
 import Notifications from "views/Notifications.js";
-import Icons from "views/Icons.js";
-import Typography from "views/Typography.js";
+//import Icons from "views/Icons.js";
 import Cart from "views/Cart.js";
 import Maps from "views/Maps.js";
 import CustomerProfile from "views/CustomerProfile.js";
+import Jackets from "views/Jackets.js"
 import Jeans from "views/Jeans.js";
 import Shirts from "views/Shirts.js";
 import Sweatshirts from "views/Sweatshirts.js";
@@ -18,12 +18,19 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/icons",
-    name: "Icons",
-    icon: "design_image",
-    component: Icons,
+    path: "/jackets",
+    name: "Jackets",
+    icon: "shopping_bag-16",
+    component: Jackets,
     layout: "/admin",
   },
+  // {
+  //   path: "/icons",
+  //   name: "Icons",
+  //   icon: "design_image",
+  //   component: Icons,
+  //   layout: "/admin",
+  // },
   {
     path: "/maps",
     name: "Maps",
