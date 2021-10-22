@@ -5,6 +5,7 @@ import ProductList from "components/ProductList/ProductList.js";
 import jeans1 from "../assets/img/jeans/jeans1.jpg";
 import jeans from "variables/jeans";
 import { addCart } from "../redux/actions";
+import { removeCart} from "../redux/actions";
 
 
 
@@ -19,13 +20,12 @@ class Jeans extends Component {
 
 
 render () {
-     //console.log("this.state.cart: ", this.state.cart);
-    console.log("cart: ", this.props.cart);
     return (
       <>
         <PanelHeader size="sm" />
         <ProductList 
           addToCart = {this.props.addCart}
+          removeFromCart = {this.props.removeCart}
           products={jeans}
           image={jeans1}
           header='Jeans For Men'
@@ -48,8 +48,9 @@ const mapStateToProps = (state)=> {
 
 const mapDispatchToProps = (dispatch) => {
       return {
-        addCart: (product) => {dispatch(addCart(product))}
-    }
+        addCart: (product) => {dispatch(addCart(product))},
+        removeCart: (product) => {dispatch(removeCart(product))}
+      }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Jeans);
