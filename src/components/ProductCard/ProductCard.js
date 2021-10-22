@@ -3,8 +3,8 @@ import { Card, CardBody, CardTitle, CardImg, Col, CardText, Button } from 'react
 
 class ProductCard extends Component {
   render() {
-    const {image, product, key, addToCart} = this.props
-    // console.log(' addToCart: ',  addToCart);
+    const {image, product, key, addToCart, removeFromCart} = this.props
+  
     
     return (
       <Col
@@ -26,6 +26,9 @@ class ProductCard extends Component {
                   <div className="cart"><i className="fa fa-shopping-cart"></i>
                     </div> 
                   <button onClick={() => addToCart(product)} className="btn btn-success cart-button px-5">Add to Cart</button>
+                </div>
+                <div>
+                  <button onClick ={() => removeFromCart(product)} className="btn btn-danger cart-button px-4">Remove</button>
                 </div>
               </div>
             </Button>
