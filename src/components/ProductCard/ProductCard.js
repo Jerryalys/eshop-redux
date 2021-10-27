@@ -27,9 +27,6 @@ class ProductCard extends Component {
                     </div> 
                   <button onClick={() => addToCart(product)} className="btn btn-success cart-button px-5">Add to Cart</button>
                 </div>
-                <div>
-                  <button onClick ={() => removeFromCart(product)} className="btn btn-danger cart-button px-4">Remove</button>
-                </div>
               </div>
             </Button>
           </CardBody>
