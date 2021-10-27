@@ -3,7 +3,7 @@ import { Card, CardBody, CardTitle, CardImg, Col, CardText, Button } from 'react
 
 class ProductCard extends Component {
   render() {
-    const {image, product, key, addToCart, removeFromCart} = this.props
+    const {image, product, index, addToCart, removeFromCart} = this.props
   
     
     return (
@@ -13,7 +13,7 @@ class ProductCard extends Component {
         sm={6}
         xs={12}
         className="font-icon-list"
-        key={key}
+        index={index}
       ><Card>
         <CardImg img src={image} alt="product"/>
           <CardBody>
