@@ -11,17 +11,31 @@ const initialState = {
 const ShoppinReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART:
-      const newCart = [...state.cart]
-      
-      newCart.push(action.payload)
+
+      let newCart = [...state.cart]
+      let itemIndex = state.cart.findIndex(obj => obj.id === action.payload.id)
+      let currItem = state.cart[itemIndex]
+
+      if (currItem) {
+      currItem.quantity = parseInt(currItem.quantity) + 1
+      state.cart[itemIndex] = currItem
+      newCart = [...state.cart]
+
+      }
+
+      else {
+
+      newCart = newCart.concat(action.payload)
+      }
+
       return {
-        ...state,
-        cart: newCart
+      cart: newCart
       }
 
     case REMOVE_FROM_CART:
       const cart = [...state.cart]
       const updatedCart = cart.filter(item => item.id !== action.payload.id)
+
       return {
         ...state,
         cart: updatedCart
