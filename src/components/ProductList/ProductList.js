@@ -3,8 +3,7 @@ import { Card, CardHeader, CardBody, Row, Col } from 'reactstrap';
 import ProductCard from "components/ProductCard/ProductCard.js";
 
 
-const ProductList = ({products, header, description, image, addToCart}) => {
-  // console.log('in list, addToCart: ', addToCart);
+const ProductList = ({products, header, description, image, addToCart, removeFromCart}) => {
   return (
     <div className="content">
         <Row>
@@ -16,11 +15,12 @@ const ProductList = ({products, header, description, image, addToCart}) => {
               </CardHeader>
               <CardBody className="all-icons">
                 <Row>
-                  {products.map((product, key) => {
+                  {products.map((product, index) => {
                     return (
                       <ProductCard 
                         addToCart={addToCart}
-                        key={key} 
+                        removeFromCart={removeFromCart}
+                        index={index} 
                         product={product} 
                         image={image}
                       />
