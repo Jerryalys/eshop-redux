@@ -1,13 +1,19 @@
 import React, { Component } from "react"
-import { connect } from "react-redux";
 import { Card, CardBody, CardHeader, CardTitle, Row, Col } from "reactstrap"
 import PanelHeader from "components/PanelHeader/PanelHeader.js"
-import { addCart } from "../redux/actions";
+import { connect } from "react-redux";
+import { removeCart} from "../redux/actions";
 
 
 class Cart extends Component {
+   removeFromCart = (product) => {
+    const cartProducts = this.props.cart 
+    const updatedCartProducts = cartProducts.filter(item => item.id !== product.id);
+  
+  }
+
   render () {
-    const cart = this.props.cart
+    const cartProducts = this.props.cart
     return (
       <>
         <PanelHeader size="sm" />
@@ -30,13 +36,14 @@ class Cart extends Component {
                     </tr>
                   </thead>
                     <tbody>
-                      {cart.length > 0 && cart.map((cart, index) => (             
-                      <tr key={cart.id}>
-                    <th scope="row">{index}</th>
-                    <td>{cart.title}</td>
-                    <td>{cart.code}</td>
-                    <td>{cart.quantity}</td>
-                    <td>{cart.price}</td>
+                      {cartProducts.map((cartProduct, index) => (             
+                      <tr key={cartProduct.id}>
+                    <th scope="row">{index +1}</th>
+                    <td>{cartProduct.title}</td>
+                    <td>{cartProduct.code}</td>
+                    <td>{cartProduct.quantity}</td>
+                    <td>{cartProduct.price}</td>
+                    <td><button onClick ={() => this.props.removeCart(cartProduct)} className="btn btn-danger cart-button px-4">Remove</button></td>
                       </tr>))}
                     </tbody>
                 </table>
@@ -50,6 +57,7 @@ class Cart extends Component {
   }
 }
 
+
 const mapStateToProps = (state)=> {
   return {
       cart: state.cart
@@ -58,7 +66,7 @@ const mapStateToProps = (state)=> {
 
 const mapDispatchToProps = (dispatch) => { 
       return {
-        addCart: (product) => {dispatch(addCart(product))}
+        removeCart: (product) => {dispatch(removeCart(product))}
     }
 }
 
