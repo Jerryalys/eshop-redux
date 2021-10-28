@@ -11,7 +11,7 @@ class Cart extends Component {
     const updatedCartProducts = cartProducts.filter(item => item.id !== product.id);
   
   }
-
+  
   render () {
     const cartProducts = this.props.cart
     return (
@@ -32,7 +32,8 @@ class Cart extends Component {
                       <th scope="col"><strong>Name</strong></th>
                       <th scope="col"><strong>Code Item</strong></th>
                       <th scope="col"><strong>Quantity</strong></th>
-                      <th scope="col"><strong>Price Total</strong></th>
+                      <th scope="col"><strong>Price</strong></th>
+                      <th scope="col"><strong>Sub Total</strong></th>
                     </tr>
                   </thead>
                     <tbody>
@@ -42,8 +43,12 @@ class Cart extends Component {
                     <td>{cartProduct.title}</td>
                     <td>{cartProduct.code}</td>
                     <td>{cartProduct.quantity}</td>
-                    <td>{cartProduct.price}</td>
-                    <td><button onClick ={() => this.props.removeCart(cartProduct)} className="btn btn-danger cart-button px-4">Remove</button></td>
+                    <td>${cartProduct.price}</td>
+                    <td>${cartProduct.price * cartProduct.quantity}</td>
+                    <td><button onClick ={() => this.props.removeCart(cartProduct)} 
+                        className="btn btn-danger cart-button px-4">Remove
+                        </button>
+                    </td>
                       </tr>))}
                     </tbody>
                 </table>

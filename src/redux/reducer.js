@@ -16,19 +16,19 @@ const ShoppinReducer = (state = initialState, action) => {
       let itemIndex = state.cart.findIndex(obj => obj.id === action.payload.id)
       let currItem = state.cart[itemIndex]
 
-      if (currItem) {
+    if (currItem) {
       currItem.quantity = parseInt(currItem.quantity) + 1
       state.cart[itemIndex] = currItem
       newCart = [...state.cart]
 
       }
 
-      else {
+    else {
 
       newCart = newCart.concat(action.payload)
       }
 
-      return {
+    return {
       cart: newCart
       }
 
@@ -36,9 +36,9 @@ const ShoppinReducer = (state = initialState, action) => {
       const cart = [...state.cart]
       const updatedCart = cart.filter(item => item.id !== action.payload.id)
 
-      return {
-        ...state,
-        cart: updatedCart
+    return {
+      ...state,
+      cart: updatedCart
       }
     
     default:

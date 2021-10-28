@@ -16,7 +16,6 @@ class Shirts extends Component {
 }
 
   render () {
-    console.log("cart: ", this.props.cart);
   return (
     <>
       <PanelHeader size="sm" />
