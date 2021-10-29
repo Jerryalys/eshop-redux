@@ -25,7 +25,7 @@ class Cart extends Component {
                   <CardTitle tag="h4">Products List</CardTitle>
                 </CardHeader>
                 <CardBody>
-                <table class="table table-striped table-hover">
+                <table className="table table-striped table-hover">
                   <thead>
                     <tr>
                       <th scope="col"><strong>#</strong></th>
