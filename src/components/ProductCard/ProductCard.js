@@ -18,7 +18,7 @@ class ProductCard extends Component {
         <CardImg img src={image} alt="product"/>
           <CardBody>
             <CardTitle className='d-inline align-middle text-danger'>{product.title}</CardTitle>
-            <CardTitle className='d-inline align-middle float-right h5'><strong>{product.price}</strong></CardTitle>
+            <CardTitle className='d-inline align-middle float-right h5'><strong>${product.price}</strong></CardTitle>
             <CardText className='my-2'>{product.description}</CardText>
             <Button>
               <div className="col-md-12 text-center">
