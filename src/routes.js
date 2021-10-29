@@ -53,7 +53,7 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/extended-tables",
+    path: "/cart",
     name: "Cart",
     icon: "shopping_shop",
     component: Cart,
